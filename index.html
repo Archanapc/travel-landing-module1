@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="mx-auto max-w-5xl">
+        <header>
+
+            <nav class="relative bg-gray-100">
+                <div class="px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex h-16 items-center justify-between p-6 lg:px-8">
+                        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                            <!-- Mobile menu button-->
+                            <button type="button" command="--toggle" commandfor="mobile-menu"
+                                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                                <span class="absolute -inset-0.5"></span>
+                                <span class="sr-only">Open main menu</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
+                            <div class="flex shrink-0 items-center">
+                                <h2>Trabook</h2>
+                            </div>
+                            <div class="hidden sm:ml-6 sm:block">
+                                <div class="flex space-x-4">
+
+                                    <a href="#"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-dark">Home</a>
+                                    <a href="#"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-dark">Projects</a>
+                                    <a href="#"
+                                        class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-white/5 hover:text-dark">Calendar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-y-0 right-0 flex items-center pr-2 gap-3 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                            <button class="text-orange-500 py-2">Login</button>
+                            <button class="bg-orange-500 text-white py-2 px-6 rounded">signUp</button>
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                    <div class="space-y-1 px-2 pt-2 pb-3">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                        <a href="#" aria-current="page"
+                            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
+                        <a href="#"
+                            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+                        <a href="#"
+                            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+                        <a href="#"
+                            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+                    </div>
+                </el-disclosure>
+            </nav>
+
+
+
+        </header>
+
+        <main>
+            <section id="home">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col gap-4 mt-8">
+                        <h1 class="font-volkhov text-4xl font-bold leading-tight">Get started your exciting <span
+                                class="text-orange-500">journey</span> with us.</h1>
+                        <p class="mt-6 text-lg text-gray-500">A Team of experienced tourism professionals will provide
+                            you with the best advice and tips
+                            for your
+                            desire place.</p>
+                        <button type="button"
+                            class="w-fit border border-orange-500 text-orange-500 px-5 py-3 rounded-md hover:bg-orange-500 hover:text-white transition">
+                            Discover Now
+                        </button>
+                    </div>
+
+                    <img src="./images/person.png" alt="">
+                </div>
+
+
+            </section>
+            <section class="py-20">
+                <div class="flex flex-row gap-6 bg-white p-5 w-[90%] md:w-[70%] mx-auto">
+                    <div>
+                        <h3 class="font-bold">Location</h3>
+                        <p class="text-gray-500">Where are you going</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Date</h3>
+                        <p class="text-gray-500">when you will go</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Guest</h3>
+                        <p class="text-gray-500">Number of guest</p>
+                    </div>
+                    <div>
+                        <button type="button" class="bg-orange-500 rounded-md px-5 py-3 text-white">Explore Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20">
+                <div class="bg-slate-100">
+                    <h1 class="text-4xl font-bold leading-tight">Things you need <span class="text-orange-500">to
+                            do</span> </h1>
+                    <p class="text-gray-500">We ensure that you'll embark on a perfectly planned, safe vacation at a price you can afford</p>
+                </div>
+            </section>
+
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
